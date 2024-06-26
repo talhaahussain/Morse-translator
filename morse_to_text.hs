@@ -54,3 +54,6 @@ morseToChar x
  | x == "--.." = 'Z'                -- U+005A
  | x == "..--.-" = '_'              -- U+005F
  | otherwise = '#'                  -- undefined
+
+morseToString :: [[Char]] -> [Char]
+morseToString x = map morseToChar x
